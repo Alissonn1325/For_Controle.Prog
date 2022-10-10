@@ -7,11 +7,11 @@
     */
 
     //ENTRADA
+    let lista = [];
 
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+    for (let controle = 1; controle < array.length; index++) {
+        let numeros = Number(prompt(`Informe os Números ${controle}`));
+        lista.push(numeros);
+    }
+    document.write(lista.sort((a, b) => b-a)[0]);
 </script>

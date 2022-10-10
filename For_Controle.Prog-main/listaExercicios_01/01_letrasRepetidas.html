@@ -9,12 +9,14 @@
     **Apresente apenas letras minúsculas!
     */
 
-    //ENTRADA
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let listaCria = [];
 
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+    for (let contador = 0; contador <= listaDeLetras.length - 1; contador++) {
+        let elementoGamer = listaDeLetras[contador].toLowerCase();
+        if (listaCria.indexOf(elementoGamer) === -1) { 
+            listaCria.push(elementoGamer);
+        }
+    }
+    document.write(listaCria.sort());
 </script>
