@@ -5,12 +5,18 @@
     Faça um programa que peça para o usuário informar um número. Identifique se o número fornecido pelo usuário é um número primo e apresente na tela.
     */
 
-    //ENTRADA
+    const numeroPrimo = parseInt(prompt("Qual o número da sua prima?"));
+    let divisivel = 0;
 
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+    for (let contador = 1; contador <= numeroPrimo; contador++) {
+        if (numeroPrimo % contador === 0) {
+            divisivel++;
+        }
+    }
+    if (divisivel === 2) {
+        document.write(`O Número ${numeroPrimo} é um Número Primo!`)
+    }
+    else {
+        document.write(`O Número ${numeroPrimo} Não é um Número Primo!`);
+    }
 </script>
