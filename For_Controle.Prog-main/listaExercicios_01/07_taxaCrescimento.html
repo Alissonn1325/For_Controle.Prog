@@ -10,7 +10,7 @@
     const populaçãoFinal = 200000;
     let anos = 0;
     
-    for (anos = 1; populaçãoAtual <= populaçãoFinal; anos++) {
+    for (anos = 0; populaçãoAtual <= populaçãoFinal; anos++) {
         populaçãoAtual = populaçãoAtual + (populaçãoAtual * taxaCrescimento);
     }
     document.write(`Serão necessários ${anos} Para Atingir 200.000 Habitantes!`)

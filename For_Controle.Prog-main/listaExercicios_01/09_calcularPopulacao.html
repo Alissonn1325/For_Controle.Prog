@@ -7,10 +7,23 @@
 
     //ENTRADA
 
+    let habitantes = 50000;
+    const taxaCrescimento = (1.5/100);
+    let anos5 = "";
+    let anos10 = "";
 
-    //PROCESSAMENTO
+    for (let anos = 0; anos <= 10; anos++) {
+        habitantes = habitantes + (habitantes * taxaCrescimento);
+        if (anos === 5) {
+            anos5 = Math.ceil(habitantes)
+            
+        } else {
+            anos10 = Math.ceil(habitantes)
+            
+        }
+        
+    }
 
-
-    //SAÍDA
+    document.write(`Quantidade de Habitantes em 5 Anos: ${anos5} </br> Quantidade de Habitantes em 10 Anos: ${anos10}`)
 
 </script>
